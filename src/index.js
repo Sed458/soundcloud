@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Stream from './components/Stream';
 
-import App from './App';
-
-const title = "React Project Template with Webpack and Babel";
+const tracks = [
+    {
+        title: 'Some track'
+    },
+    {
+        title: 'Some other track'
+    }
+];
 
 ReactDOM.render(
-    <App title={title} />, 
+    <Stream tracks={tracks} />, 
     document.getElementById('app')
 );
 
